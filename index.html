@@ -23,7 +23,7 @@ header h1{font-family:var(--serif);font-size:clamp(32px,6vw,56px);font-weight:40
 .upload-section{margin:48px auto;max-width:600px}.mode-switch{display:flex;gap:4px;background:var(--s1);border:1px solid var(--b1);border-radius:12px;padding:5px;margin:0 auto 24px;width:fit-content}.mode-btn{padding:12px 24px;border:none;background:transparent;color:var(--t3);font-family:var(--font);font-size:14px;font-weight:500;border-radius:10px;cursor:pointer;transition:all .2s;min-height:44px;-webkit-tap-highlight-color:transparent;touch-action:manipulation}.mode-btn.active{background:var(--s3);color:var(--t1);box-shadow:0 1px 4px rgba(0,0,0,.3)}.mode-btn:hover:not(.active){color:var(--t2)}
 .drop-zone{position:relative;border:1px dashed var(--b1);border-radius:20px;padding:80px 48px;text-align:center;cursor:pointer;transition:all .3s;background:var(--s1);overflow:hidden}.drop-zone::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 100%,var(--emerald-dim),transparent 50%);opacity:0;transition:opacity .3s}.drop-zone:hover{border-color:var(--emerald);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.3)}.drop-zone:hover::before{opacity:1}.drop-zone.dragging{border-color:var(--emerald);background:var(--s2)}.drop-icon{width:56px;height:56px;margin:0 auto 18px;border-radius:16px;background:var(--s3);border:1px solid var(--b1);display:flex;align-items:center;justify-content:center;position:relative}.drop-icon svg{color:var(--t3);transition:color .3s}.drop-zone:hover .drop-icon svg{color:var(--emerald)}.drop-zone h3{font-weight:500;font-size:16px;margin-bottom:6px;position:relative;color:var(--t2)}.drop-zone p{font-size:13px;color:var(--t4);position:relative}.drop-zone .filetypes{margin-top:14px;display:flex;gap:6px;justify-content:center;position:relative}.drop-zone .ft{font-family:var(--mono);font-size:10px;padding:3px 8px;background:var(--s3);border-radius:4px;color:var(--t4)}#fileInput{display:none}
 .webcam-wrap{display:none;text-align:center}.webcam-wrap video{width:100%;max-width:500px;border-radius:var(--r);border:1px solid var(--b1);transform:scaleX(-1)}.capture-btn{margin-top:16px;padding:16px 40px;min-height:48px;background:linear-gradient(135deg,var(--emerald),#2dd4a8);color:var(--bg);border:none;border-radius:10px;font-family:var(--font);font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(52,211,153,.25)}.capture-btn:hover{transform:translateY(-1px)}
-.preview-wrap{display:none;position:relative;margin:0 auto 36px;max-width:600px;border-radius:20px;overflow:hidden;border:1px solid var(--b1);background:var(--s1)}.preview-wrap img{width:100%;display:block;max-height:520px;object-fit:contain;background:#000}.preview-wrap canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.preview-controls{position:absolute;bottom:12px;right:12px;display:flex;gap:8px;z-index:5}.pctrl{width:42px;height:42px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.5);backdrop-filter:blur(8px);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:all .2s}.pctrl:hover{background:rgba(0,0,0,.7);border-color:var(--emerald)}.pctrl.active{border-color:var(--emerald);background:rgba(52,211,153,.2)}.overlay-info{position:absolute;top:12px;left:12px;z-index:5;display:flex;gap:4px;flex-wrap:wrap}.overlay-chip{font-family:var(--mono);font-size:9px;padding:4px 10px;border-radius:6px;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1);color:var(--t2);letter-spacing:1px;text-transform:uppercase}
+.preview-wrap{display:none;position:relative;margin:0 auto 36px;max-width:600px;max-height:600px;border-radius:20px;overflow:hidden;border:1px solid var(--b1);background:var(--s1)}.preview-wrap img{width:100%;display:block;background:var(--s1)}.preview-wrap canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.preview-controls{position:absolute;bottom:12px;right:12px;display:flex;gap:8px;z-index:5}.pctrl{width:42px;height:42px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.5);backdrop-filter:blur(8px);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:all .2s}.pctrl:hover{background:rgba(0,0,0,.7);border-color:var(--emerald)}.pctrl.active{border-color:var(--emerald);background:rgba(52,211,153,.2)}.overlay-info{position:absolute;top:12px;left:12px;z-index:5;display:flex;gap:4px;flex-wrap:wrap}.overlay-chip{font-family:var(--mono);font-size:9px;padding:4px 10px;border-radius:6px;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1);color:var(--t2);letter-spacing:1px;text-transform:uppercase}
 .loading-screen{position:fixed;inset:0;z-index:10000;background:rgba(8,8,11,.94);backdrop-filter:blur(20px);display:none;flex-direction:column;align-items:center;justify-content:center;gap:28px}.loading-screen.on{display:flex}.scan-anim{position:relative;width:100px;height:100px}.scan-ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--b1)}.scan-ring:nth-child(1){border-top-color:var(--emerald);animation:spin 1s linear infinite}.scan-ring:nth-child(2){inset:8px;border-right-color:var(--sky);animation:spin 1.5s linear infinite reverse}.scan-ring:nth-child(3){inset:16px;border-bottom-color:var(--violet);animation:spin 2s linear infinite}.scan-center{position:absolute;inset:24px;border-radius:50%;background:var(--emerald-dim);display:flex;align-items:center;justify-content:center}.scan-center svg{color:var(--emerald);animation:pulse 1.5s ease infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.9)}}.loading-label{font-family:var(--mono);font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--emerald)}.loading-sub{font-size:13px;color:var(--t4);margin-top:-16px}.loading-bar{width:200px;height:3px;background:var(--s3);border-radius:2px;overflow:hidden;margin-top:-12px}.loading-bar-fill{height:100%;background:linear-gradient(90deg,var(--emerald),var(--sky));border-radius:2px;width:0%;transition:width .4s}
 .results-wrap{display:none;animation:fadeUp .7s ease}.results-wrap.on{display:block}@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 .hero-score{text-align:center;padding:64px 32px;margin-bottom:32px;position:relative;border-radius:var(--r2);border:1px solid var(--b1);background:var(--s1);overflow:hidden}.hero-score::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,var(--emerald-dim),transparent 40%)}.hero-score::after{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:200px;height:1px;background:linear-gradient(90deg,transparent,var(--emerald),transparent)}.score-pill{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;background:var(--s3);border:1px solid var(--b1);border-radius:100px;margin-bottom:16px;position:relative}.score-pill span{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--t3)}.score-tier-badge{display:inline-flex;align-items:center;gap:6px;padding:8px 20px;border-radius:100px;margin-top:14px;font-size:13px;font-weight:600;letter-spacing:.5px;position:relative}.percentile-text{font-size:13px;color:var(--t3);margin-top:10px;position:relative}.percentile-text strong{color:var(--t1);font-weight:600}
@@ -113,8 +113,8 @@ header h1{font-family:var(--serif);font-size:clamp(32px,6vw,56px);font-weight:40
 .gauge-ring{transform:rotate(-90deg)}
 .gauge-bg{fill:none;stroke:var(--s3);stroke-width:8}
 .gauge-fill{fill:none;stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1)}
-.gauge-score{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.gauge-of{font-size:14px;color:var(--t4);margin-top:2px}
+.gauge-score{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;pointer-events:none}
+.gauge-of{font-size:12px;color:var(--t4);margin-top:4px;letter-spacing:1px}
 
 /* ═══ VERDICT STRIP ═══ */
 .verdict-chip{flex-shrink:0;display:flex;align-items:center;gap:10px;padding:12px 18px;background:var(--s1);border:1px solid var(--b1);border-radius:10px;font-size:12px;color:var(--t2);transition:all .2s}
@@ -182,7 +182,7 @@ header h1{font-family:var(--serif);font-size:clamp(32px,6vw,56px);font-weight:40
 .cm-row-right{display:flex;align-items:center;gap:8px}
 .physique-wrap{max-width:600px;margin:0 auto}
 .physique-preview{display:none;position:relative;margin:0 auto 32px;max-width:500px;border-radius:20px;overflow:hidden;border:1px solid var(--b1);background:var(--s1)}
-.physique-preview img{width:100%;display:block;max-height:600px;object-fit:contain;background:#000}
+.physique-preview img{width:100%;display:block;background:var(--s1)}
 .physique-preview canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
 .physique-results{display:none}.physique-results.on{display:block}
 .physique-hero{text-align:center;padding:48px 28px;margin-bottom:28px;border-radius:20px;border:1px solid var(--b1);background:var(--s1);position:relative;overflow:hidden}
@@ -206,13 +206,53 @@ header h1{font-family:var(--serif);font-size:clamp(32px,6vw,56px);font-weight:40
 .verdict-strip{gap:8px}
 }
 
+
+.simple-results{margin-bottom:32px}
+.simple-summary{background:var(--s1);border:1px solid var(--b1);border-radius:20px;padding:32px;margin-bottom:20px}
+.simple-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.simple-col h4{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--t4);margin-bottom:14px}
+.simple-item{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--b1)}
+.simple-item:last-child{border-bottom:none}
+.simple-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.simple-item-name{font-size:13px;color:var(--t2);flex:1}
+.simple-item-score{font-family:var(--mono);font-size:13px;font-weight:600}
+.detail-toggle{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;background:var(--s2);border:1px solid var(--b1);border-radius:12px;color:var(--t2);font-family:var(--font);font-size:14px;font-weight:500;cursor:pointer;transition:all .2s;margin:0 auto 28px;width:fit-content;min-height:48px}
+.detail-toggle:hover{border-color:var(--emerald);color:var(--t1)}
+.detail-toggle .arrow{transition:transform .3s;font-size:10px}
+.detail-toggle.open .arrow{transform:rotate(180deg)}
+.detailed-results{display:none;animation:fadeUp .5s ease}
+.detailed-results.on{display:block}
+@media(max-width:700px){.simple-row{grid-template-columns:1fr}}
+
+.transform-section{background:var(--s1);border:1px solid var(--b1);border-radius:20px;padding:32px;margin:28px 0;overflow:hidden}
+.transform-section h3{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--t4);margin-bottom:20px;text-align:center}
+.ba-container{position:relative;max-width:400px;margin:0 auto 24px;border-radius:12px;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none}
+.ba-container canvas{display:block;width:100%;border-radius:12px}
+.ba-slider{position:absolute;top:0;bottom:0;width:3px;background:var(--emerald);cursor:ew-resize;z-index:3;box-shadow:0 0 8px rgba(52,211,153,.4)}
+.ba-slider::before{content:'⟨ ⟩';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:32px;height:32px;border-radius:50%;background:var(--emerald);color:var(--bg);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;letter-spacing:-2px}
+.ba-label{position:absolute;top:10px;padding:4px 10px;font-family:var(--mono);font-size:9px;letter-spacing:1px;border-radius:6px;background:rgba(0,0,0,.6);color:#fff;z-index:4;pointer-events:none}
+.ba-label.before{left:10px}.ba-label.after{right:10px}
+.ba-clip{position:absolute;top:0;left:0;bottom:0;overflow:hidden;z-index:2}
+.score-change{display:flex;align-items:center;gap:6px;padding:8px 0;font-size:13px;color:var(--t2);border-bottom:1px solid var(--b1)}
+.score-change:last-child{border-bottom:none}
+.sc-metric{flex:1;font-weight:500}.sc-old{font-family:var(--mono);color:var(--t4);font-size:12px}
+.sc-arrow{color:var(--t4);font-size:10px}
+.sc-new{font-family:var(--mono);color:var(--emerald);font-size:12px;font-weight:600}
+.sc-delta{font-family:var(--mono);font-size:10px;color:var(--emerald);background:var(--emerald-dim);padding:2px 6px;border-radius:4px}
+.skin-detail-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px}
+.skin-detail{background:var(--s2);border-radius:12px;padding:16px;text-align:center}
+.skin-detail .sd-icon{font-size:22px;margin-bottom:6px}
+.skin-detail .sd-label{font-family:var(--mono);font-size:10px;letter-spacing:1px;color:var(--t4);text-transform:uppercase;margin-bottom:6px}
+.skin-detail .sd-score{font-family:var(--mono);font-size:20px;font-weight:700;margin-bottom:4px}
+.skin-detail .sd-desc{font-size:11px;color:var(--t3);line-height:1.5}
+
 .profile-prompt{background:var(--s1);border:1px solid var(--b1);border-radius:16px;padding:28px;margin:28px 0;text-align:center}
 .profile-prompt h3{font-size:15px;font-weight:500;color:var(--t2);margin-bottom:6px}
 .profile-prompt p{font-size:13px;color:var(--t4);margin-bottom:16px;line-height:1.6}
 .profile-btn{padding:14px 32px;background:var(--s3);border:1px solid var(--b2);color:var(--t1);border-radius:12px;font-family:var(--font);font-size:14px;font-weight:500;cursor:pointer;transition:all .2s;min-height:48px;display:inline-flex;align-items:center;gap:8px}
 .profile-btn:hover{border-color:var(--emerald);background:var(--s4)}
 .profile-preview{display:none;position:relative;margin:20px auto;max-width:400px;border-radius:16px;overflow:hidden;border:1px solid var(--b1)}
-.profile-preview img{width:100%;display:block;max-height:400px;object-fit:contain;background:#000}
+.profile-preview img{width:100%;display:block;background:var(--s1)}
 .profile-preview canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
 .profile-metrics{display:none;margin-top:20px}.profile-metrics.on{display:block}
 .profile-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;background:var(--s3);border:1px solid var(--b1);border-radius:100px;font-family:var(--mono);font-size:10px;color:var(--t3);letter-spacing:1px;margin-bottom:16px}
@@ -381,7 +421,9 @@ dropZone.addEventListener('dragleave',()=>dropZone.classList.remove('dragging'))
 dropZone.addEventListener('drop',e=>{e.preventDefault();dropZone.classList.remove('dragging');if(e.dataTransfer.files[0])processFile(e.dataTransfer.files[0])});
 fileInput.addEventListener('change',e=>{if(e.target.files[0])processFile(e.target.files[0])});
 function switchMode(m,b){document.querySelectorAll('.mode-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');if(m==='upload'){dropZone.style.display='';document.getElementById('webcamWrap').style.display='none';stopWC()}else{dropZone.style.display='none';document.getElementById('webcamWrap').style.display='block';startWC()}}
-async function startWC(){try{currentStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user',width:640}});document.getElementById('webcamVideo').srcObject=currentStream}catch(e){alert('Webcam access denied.')}}
+async function startWC(){
+  if(!confirm('FACESCAN needs camera access to capture your photo.\n\nYour camera feed is processed 100% locally — no images are sent anywhere.\n\nAllow camera access?'))return;
+  try{currentStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user',width:{ideal:640}}});document.getElementById('webcamVideo').srcObject=currentStream}catch(e){alert('Camera access was denied. Please allow camera permission in your browser settings and try again.')}}
 function stopWC(){if(currentStream){currentStream.getTracks().forEach(t=>t.stop());currentStream=null}}
 function captureWebcam(){const v=document.getElementById('webcamVideo'),c=document.getElementById('hidden');c.width=v.videoWidth;c.height=v.videoHeight;const ctx=c.getContext('2d');ctx.translate(c.width,0);ctx.scale(-1,1);ctx.drawImage(v,0,0);c.toBlob(b=>{processFile(new File([b],'cap.jpg',{type:'image/jpeg'}))},'image/jpeg',.92);stopWC();document.getElementById('webcamWrap').style.display='none'}
 function processFile(file){const img=document.getElementById('previewImg'),r=new FileReader();r.onload=e=>{img.src=e.target.result;img.onload=()=>{document.getElementById('uploadSection').style.display='none';document.getElementById('previewWrap').style.display='block';analyzeImage(img)}};r.readAsDataURL(file)}
@@ -395,9 +437,17 @@ document.getElementById('overlayLabel').textContent=Object.entries(currentOverla
 const dd=(a,b)=>Math.sqrt((a.x-b.x)**2+(a.y-b.y)**2),mp=(a,b)=>({x:(a.x+b.x)/2,y:(a.y+b.y)/2}),cl2=(v,lo=1,hi=10)=>Math.max(lo,Math.min(hi,v));
 function showLoad(l,s,p){document.getElementById('loadingScreen').classList.add('on');document.getElementById('loadLabel').textContent=l;document.getElementById('loadSub').textContent=s;document.getElementById('loadBar').style.width=p+'%'}
 function hideLoad(){document.getElementById('loadingScreen').classList.remove('on')}
-async function analyzeImage(img){try{if(!modelsLoaded){showLoad('Loading Models','Downloading SSD MobilenetV1 detector...',10);await faceapi.nets.ssdMobilenetv1.loadFromUri(MODEL_URL);showLoad('Loading Models','Loading 68-point landmark predictor...',50);await faceapi.nets.faceLandmark68Net.loadFromUri(MODEL_URL);modelsLoaded=true}showLoad('Scanning','Detecting face with high-accuracy model...',65);const canvas=document.getElementById('overlayCanvas');canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;const det=await faceapi.detectSingleFace(img,new faceapi.SsdMobilenetv1Options({minConfidence:.35})).withFaceLandmarks();if(!det){hideLoad();alert('No face detected. Use a clear, front-facing photo with even lighting.');resetAll();return}
-    if(det.detection.score<0.5){hideLoad();alert('Low confidence face detection ('+Math.round(det.detection.score*100)+'%). Try a clearer, better-lit photo.');resetAll();return}showLoad('Analyzing','Computing 21 biometric metrics...',80);landmarksData=det.landmarks;drawOverlays();showLoad('Generating','Building report...',95);await new Promise(r=>setTimeout(r,500));let skinData;try{skinData=analyzeSkin(img,det.landmarks)}catch(e){console.warn('Skin analysis failed:',e);skinData={cheekVar:15,allStd:15,underEyeDiff:0.05,lumSymmetry:0.02,colorUniformity:0.5,avgLum:128,patchSz:20}}
-analysisResults=computeMetrics(det.landmarks,skinData);hideLoad();displayResults(analysisResults)}catch(err){hideLoad();console.error(err);alert('Error: '+err.message)}}
+async function analyzeImage(img){try{if(!modelsLoaded){showLoad('Loading Models','Downloading SSD MobilenetV1 detector...',10);await faceapi.nets.ssdMobilenetv1.loadFromUri(MODEL_URL);showLoad('Loading Models','Loading 68-point landmark predictor...',50);await faceapi.nets.faceLandmark68Net.loadFromUri(MODEL_URL);modelsLoaded=true}showLoad('Scanning','Detecting face with high-accuracy model...',65);const canvas=document.getElementById('overlayCanvas');
+    canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
+    // Match canvas CSS to image actual render size for perfect overlay alignment
+    const imgW=img.clientWidth,imgH=img.clientHeight;
+    if(imgW>0&&imgH>0){canvas.style.width=imgW+'px';canvas.style.height=imgH+'px';canvas.style.left='0';canvas.style.top='0';}const det=await faceapi.detectSingleFace(img,new faceapi.SsdMobilenetv1Options({minConfidence:.35})).withFaceLandmarks();if(!det){hideLoad();alert('No face detected. Use a clear, front-facing photo with even lighting.');resetAll();return}
+    if(det.detection.score<0.5){hideLoad();alert('Low confidence face detection ('+Math.round(det.detection.score*100)+'%). Try a clearer, better-lit photo.');resetAll();return}showLoad('Analyzing','Computing 21 biometric metrics...',80);landmarksData=det.landmarks;
+    // Auto-crop removed: was breaking landmark-to-pixel alignment
+
+drawOverlays();showLoad('Generating','Building report...',95);await new Promise(r=>setTimeout(r,500));let skinData;try{skinData=window._lastSkinData=analyzeSkin(img,det.landmarks)}catch(e){console.warn('Skin analysis failed:',e);skinData={cheekVar:15,allStd:15,underEyeDiff:0.05,lumSymmetry:0.02,colorUniformity:0.5,avgLum:128,patchSz:20}}
+analysisResults=computeMetrics(det.landmarks,skinData);
+    analysisResults.skinData=skinData;hideLoad();displayResults(analysisResults)}catch(err){hideLoad();console.error(err);alert('Error: '+err.message)}}
 
 function analyzeSkin(imgEl,landmarks){
   const c=document.getElementById('hidden');
@@ -538,7 +588,7 @@ M.thirds={cat:'proportions',label:'Facial Thirds',sub:'Balance between mid and l
 // ═══ 3. FACIAL WIDTH-TO-HEIGHT RATIO ═══
 const fwhr=fW/fH;
 // Use wider bell curve (k=5) — many attractive faces deviate from phi
-const fwhrSc=sigScore(fwhr,1.618,5);
+const fwhrSc=sigScore(fwhr,1.618,7);
 M.fwhr={cat:'proportions',label:'Width-to-Height Ratio',sub:'Face width relative to height',score:fwhrSc,measured:fwhr.toFixed(3),ideal:'1.618 (φ)',
   desc:'FWHR of '+fwhr.toFixed(2)+'. '+(fwhrSc>=8?'Close to the golden ratio — excellent structural proportions.':
   fwhr>1.85?'Face reads wide — strong lateral bone structure.':
@@ -547,7 +597,7 @@ M.fwhr={cat:'proportions',label:'Width-to-Height Ratio',sub:'Face width relative
 
 // ═══ 4. EYE SPACING (IPD) ═══
 const eyeRatio=ipd/fW;
-const eyeSc=sigScore(eyeRatio,0.44,20);
+const eyeSc=sigScore(eyeRatio,0.44,35);
 M.eyeSpacing={cat:'proportions',label:'Interpupillary Ratio',sub:'Spacing between your eyes',score:eyeSc,measured:eyeRatio.toFixed(3),ideal:'0.440',
   desc:'IPD ratio: '+eyeRatio.toFixed(3)+'. '+(eyeSc>=8?'Ideal eye spacing — well-centered in the face.':
   eyeRatio>0.48?'Eyes are noticeably wide-set.':
@@ -578,7 +628,7 @@ M.nose={cat:'features',label:'Nose Width',sub:'Nose width relative to eye spacin
 // ═══ 7. NOSE LENGTH ═══
 const noseLen=dd(topBrow,noseTip);
 const noseLenR=noseLen/fH;
-const nlSc=sigScore(noseLenR,0.47,16);
+const nlSc=sigScore(noseLenR,0.47,22);
 M.noseLength={cat:'features',label:'Nose Length',sub:'Nose length relative to face',score:nlSc,measured:noseLenR.toFixed(3),ideal:'0.470',
   desc:'Nose is '+(noseLenR*100).toFixed(0)+'% of face height. '+(nlSc>=8?'Ideal nose length proportions.':
   noseLenR>0.53?'Nose appears long relative to face.':
@@ -640,7 +690,7 @@ M.canthal={cat:'features',label:'Canthal Tilt',sub:'Upward tilt of the eyes',sco
 // Bigonial width at jaw angle / bizygomatic width
 const jawW=dd(p(4),p(12)); // Jaw gonion points
 const jawRatio=jawW/fW;
-const jawSc=sigScore(jawRatio,0.75,14);
+const jawSc=sigScore(jawRatio,0.75,18);
 M.jaw={cat:'features',label:'Jaw Definition',sub:'Jaw width and definition',score:jawSc,measured:jawRatio.toFixed(3),ideal:'0.750',
   desc:'Jaw:cheek = '+jawRatio.toFixed(2)+'. '+(jawSc>=8?'Strong, well-defined jaw with ideal width ratio.':
   jawRatio>0.84?'Wide jaw — reads as square/angular. Masseter botox could slim if desired.':
@@ -650,7 +700,7 @@ M.jaw={cat:'features',label:'Jaw Definition',sub:'Jaw width and definition',scor
 // ═══ 12. MOUTH-NOSE RATIO ═══
 const mouthW=dd(p(48),p(54));
 const mnRatio=mouthW/Math.max(noseW,fW*0.05);
-const mnSc=sigScore(mnRatio,1.5,9);
+const mnSc=sigScore(mnRatio,1.5,25);
 M.mouthProp={cat:'features',label:'Mouth-Nose Ratio',sub:'Mouth size relative to nose',score:mnSc,measured:mnRatio.toFixed(2),ideal:'1.50',
   desc:'Mouth is '+mnRatio.toFixed(2)+'× nose width. '+(mnSc>=8?'Harmonious mouth-to-nose proportion.':
   mnRatio>1.8?'Wide mouth relative to nose — broad smile.':
@@ -661,7 +711,7 @@ M.mouthProp={cat:'features',label:'Mouth-Nose Ratio',sub:'Mouth size relative to
 const philtrumLen=dd(noseBase,p(51)); // Nose base to upper lip top
 const chinLen=dd(p(57),chin); // Lower lip bottom to chin
 const chinRatio=chinLen/Math.max(philtrumLen,fH*0.02);
-const chinSc=sigScore(chinRatio,2.0,3);
+const chinSc=sigScore(chinRatio,2.0,6);
 M.chin={cat:'features',label:'Chin Projection',sub:'Chin projection and balance',score:chinSc,measured:chinRatio.toFixed(2),ideal:'2.00',
   desc:'Chin:philtrum = '+chinRatio.toFixed(2)+'. '+(chinSc>=8?'Well-projected chin with balanced vertical proportion.':
   chinRatio<1.4?'Chin appears recessed — filler or genioplasty could improve the profile.':
@@ -674,7 +724,7 @@ const reWidth=dd(p(36),p(39));
 const leWidth=dd(p(42),p(45));
 const avgEyeW=(reWidth+leWidth)/2;
 const eyeWR=avgEyeW/fW;
-const ewSc=sigAsym(eyeWR,0.195,20,8); // Penalize small eyes more than large
+const ewSc=sigAsym(eyeWR,0.195,25,15); // Penalize small eyes more than large
 M.eyeWidth={cat:'features',label:'Eye Width',sub:'Eye size relative to face',score:ewSc,measured:eyeWR.toFixed(3),ideal:'0.195',
   desc:'Eye width = '+(eyeWR*100).toFixed(1)+'% of face. '+(ewSc>=8?'Ideal eye size proportions.':
   eyeWR>0.23?'Large, prominent eyes — a universally attractive feature.':
@@ -712,7 +762,7 @@ function angle3pt(a,vertex,b){
 const rGonial=angle3pt(p(2),p(5),p(8));
 const lGonial=angle3pt(p(14),p(11),p(8));
 const avgGonial=(rGonial+lGonial)/2;
-const gonialSc=sigScore(avgGonial,120,0.003);
+const gonialSc=sigScore(avgGonial,120,55);
 M.gonial={cat:'features',label:'Gonial (Jaw) Angle',sub:'Sharpness of the jawline angle',score:gonialSc,measured:avgGonial.toFixed(0)+'°',ideal:'115°–125°',
   desc:'Jaw angle: '+avgGonial.toFixed(0)+'°. '+(gonialSc>=8?'Well-defined jaw angle in the attractive range.':
   avgGonial<110?'Very acute jaw angle — strong, angular jaw definition.':
@@ -724,7 +774,7 @@ const lBrowEyeGap=dd(avgPt(17,18,19,20,21),LEctr);
 const rBrowEyeGap=dd(avgPt(22,23,24,25,26),REctr);
 const browGapAvg=(lBrowEyeGap+rBrowEyeGap)/2;
 const browGapR=browGapAvg/fH;
-const browSc=sigScore(browGapR,0.09,30);
+const browSc=sigScore(browGapR,0.09,12);
 M.browPos={cat:'features',label:'Brow Position',sub:'How high your brows sit',score:browSc,measured:browGapR.toFixed(3),ideal:'0.090',
   desc:'Brow gap: '+browGapR.toFixed(3)+'. '+(browSc>=8?'Ideal brow height — provides good eye framing.':
   browGapR>0.11?'High-set brows — creates an alert, open expression.':
@@ -733,11 +783,11 @@ M.browPos={cat:'features',label:'Brow Position',sub:'How high your brows sit',sc
 
 // ═══ 18. PHILTRUM PROPORTION ═══
 const philR=philtrumLen/fH;
-const philSc=sigAsym(philR,0.055,25,20);
+const philSc=sigAsym(philR,0.055,3,12);
 M.philtrum={cat:'features',label:'Philtrum Length',sub:'Distance from nose to upper lip',score:philSc,measured:philR.toFixed(3),ideal:'0.055',
   desc:'Philtrum: '+philR.toFixed(3)+'. '+(philSc>=8?'Ideal philtrum length — youthful proportion.':
   philR>0.07?'Long philtrum — a lip lift could shorten by 3-5mm for a more youthful look.':
-  philR<0.04?'Very short philtrum — youthful and attractive trait.':
+  philR<0.04?'Short philtrum — a youthful, attractive trait.':
   'Philtrum length slightly off ideal.')};
 
 // ═══ 19. FACIAL TAPER ═══
@@ -752,7 +802,7 @@ M.taper={cat:'proportions',label:'Facial Taper',sub:'How the face narrows to the
 // ═══ 20. SKIN UNIFORMITY (pixel analysis) ═══
 const skinUnif=skinData?skinData.colorUniformity:0.5;
 const skinStd=skinData?skinData.allStd:15;
-const skinUScore=cl2(1+9*Math.exp(-0.0008*skinStd*skinStd));
+const skinUScore=cl2(1+9*Math.exp(-0.003*skinStd*skinStd));
 M.skinUnif={cat:'features',label:'Skin Evenness',sub:'How even your skin tone is',score:skinUScore,measured:skinStd.toFixed(1),ideal:'< 10',
   desc:'Std dev: '+skinStd.toFixed(1)+'. '+(skinUScore>=8?'Very even skin tone across the face.':
   skinStd>20?'Noticeable variation in skin tone/brightness across face regions.':
@@ -791,14 +841,54 @@ const raw={
   ulH, llH, philtrumLen, chinLen, totalLip, browGapAvg
 };
 
-return{metrics:M,overall,faceShape,raw}}
+return{metrics:M,overall,faceShape,raw,skinData}}
 
-function displayResults({metrics:M,overall:o,faceShape,raw}){const R=document.getElementById('resultsWrap');R.classList.add('on');let tier,tCol;if(o>=8.5){tier='Top Tier';tCol='var(--gold)'}else if(o>=7.5){tier='Above Average';tCol='var(--emerald)'}else if(o>=6){tier='Average';tCol='var(--sky)'}else if(o>=4.5){tier='Below Average';tCol='var(--amber)'}else{tier='Low Harmony';tCol='var(--rose)'}const pct=Math.min(99,Math.round(5+95/(1+Math.exp(-(o-5.5)*1.2))));const iPart=Math.floor(o),dPart=((o-iPart)*10).toFixed(0);
+function displayResults({metrics:M,overall:o,faceShape,raw,skinData}){const R=document.getElementById('resultsWrap');R.classList.add('on');let tier,tCol;if(o>=8.5){tier='Top Tier';tCol='var(--gold)'}else if(o>=7.5){tier='Above Average';tCol='var(--emerald)'}else if(o>=6){tier='Average';tCol='var(--sky)'}else if(o>=4.5){tier='Below Average';tCol='var(--amber)'}else{tier='Low Harmony';tCol='var(--rose)'}const pct=Math.min(99,Math.round(5+95/(1+Math.exp(-(o-5.5)*1.2))));const iPart=Math.floor(o),dPart=((o-iPart)*10).toFixed(0);
 const circumf=Math.PI*2*80;const dashOff=circumf*(1-o/10);
 document.getElementById('heroScore').innerHTML='<div class="score-pill"><span>Overall Harmony Score</span></div><div class="gauge-wrap"><svg class="gauge-ring" viewBox="0 0 180 180" width="180" height="180"><circle class="gauge-bg" cx="90" cy="90" r="80"/><circle class="gauge-fill" cx="90" cy="90" r="80" id="gaugeArc" style="stroke-dasharray:'+circumf+';stroke-dashoffset:'+dashOff+'"/></svg><div class="gauge-score"><div class="gauge-num" style="color:'+tCol+'">'+iPart+'<span style="font-size:28px;opacity:.6">.'+dPart+'</span></div><div class="gauge-of">out of 10</div></div></div><div class="score-tier-badge" style="background:'+tCol+'15;color:'+tCol+';border:1px solid '+tCol+'30">'+tier+'</div><div class="percentile-text">Top <strong>'+(100-pct)+'%</strong> — better than '+pct+'% of faces analyzed</div>'+(faceShape?'<div class="face-shape-row"><span class="face-shape-badge"><span class="shape-icon">◇</span>'+faceShape+' Face Shape</span></div>':'');
 setTimeout(()=>{const arc=document.getElementById("gaugeArc");if(arc){const colMap={"var(--gold)":"#f5c842","var(--emerald)":"#34d399","var(--sky)":"#38bdf8","var(--amber)":"#fbbf24","var(--rose)":"#fb7185"};arc.setAttribute("stroke",colMap[tCol]||"#34d399")}},50);
 const sorted=Object.values(M).sort((a,b)=>b.score-a.score),worst=sorted[sorted.length-1],best=sorted[0],avg=Object.values(M).reduce((s,m)=>s+m.score,0)/Object.keys(M).length;
 document.getElementById('quickStats').innerHTML='<div class="qs-card"><div class="qs-label">Best Feature</div><div class="qs-val" style="color:var(--emerald)">'+best.score.toFixed(1)+'</div><div class="qs-sub">'+best.label+'</div></div><div class="qs-card"><div class="qs-label">Weakest</div><div class="qs-val" style="color:var(--rose)">'+worst.score.toFixed(1)+'</div><div class="qs-sub">'+worst.label+'</div></div><div class="qs-card"><div class="qs-label">Average</div><div class="qs-val" style="color:var(--sky)">'+avg.toFixed(1)+'</div><div class="qs-sub">21 metrics</div></div><div class="qs-card"><div class="qs-label">Above 7</div><div class="qs-val" style="color:var(--violet)">'+Object.values(M).filter(m=>m.score>=7).length+'<span style="font-size:14px;color:var(--t4)"> /'+Object.keys(M).length+'</span></div><div class="qs-sub">strong</div></div>';
+
+// ═══ SIMPLE RESULTS (shown first) ═══
+const sortedByScore=Object.entries(M).sort((a,b)=>b[1].score-a[1].score);
+const top3s=sortedByScore.slice(0,3);
+const bot3s=sortedByScore.slice(-3).reverse();
+let simpleHtml='<div class="simple-results"><div class="simple-summary">';
+simpleHtml+='<div style="text-align:center;margin-bottom:8px;font-size:13px;color:var(--t3)">Here\'s what stands out about your face</div>';
+simpleHtml+='<div class="simple-row"><div class="simple-col"><h4>💪 Your Strengths</h4>';
+top3s.forEach(([k,m])=>{
+  const col=m.score>=8?'var(--emerald)':m.score>=6.5?'var(--sky)':'var(--amber)';
+  simpleHtml+='<div class="simple-item"><div class="simple-dot" style="background:'+col+'"></div><span class="simple-item-name">'+m.label+'</span><span class="simple-item-score" style="color:'+col+'">'+m.score.toFixed(1)+'</span></div>';
+});
+simpleHtml+='</div><div class="simple-col"><h4>📌 Room to Improve</h4>';
+bot3s.forEach(([k,m])=>{
+  const col=m.score>=6.5?'var(--sky)':m.score>=4.5?'var(--amber)':'var(--rose)';
+  simpleHtml+='<div class="simple-item"><div class="simple-dot" style="background:'+col+'"></div><span class="simple-item-name">'+m.label+'</span><span class="simple-item-score" style="color:'+col+'">'+m.score.toFixed(1)+'</span></div>';
+});
+simpleHtml+='</div></div></div></div>';
+document.getElementById('quickStats').insertAdjacentHTML('afterend',simpleHtml);
+
+// ═══ DETAIL TOGGLE ═══
+const detailToggleHtml='<button class="detail-toggle" onclick="toggleDetails(this)"><span>View Detailed Analysis</span><span class="arrow">▼</span></button>';
+document.getElementById('quickStats').parentElement.querySelector('.simple-results').insertAdjacentHTML('afterend',detailToggleHtml);
+
+// Wrap tabs + detailed content in collapsible div
+const tabsBar=document.querySelector('.tabs-bar');
+const allPanels=document.querySelectorAll('.tab-panel');
+if(!document.getElementById('detailedSection')){
+  const wrapper=document.createElement('div');
+  wrapper.id='detailedSection';
+  wrapper.className='detailed-results';
+  tabsBar.parentNode.insertBefore(wrapper,tabsBar);
+  wrapper.appendChild(tabsBar);
+  allPanels.forEach(p=>wrapper.appendChild(p));
+  // Also move opinions and consensus into detailed
+  const op=document.getElementById('opinionsPanel');
+  const cr=document.getElementById('consensusRow');
+  if(op)wrapper.insertBefore(op,wrapper.firstChild);
+  if(cr)wrapper.insertBefore(cr,op?op.nextSibling:wrapper.firstChild);
+}
 
 // ═══ VERDICT STRIP ═══
 const verdicts=sorted.slice(0,3).map(m=>({e:'💪',l:m.label,v:m.score.toFixed(1),type:'strength'}));
@@ -844,6 +934,7 @@ document.getElementById('consensusRow').innerHTML=
 
 renderCards('allMetricsGrid',M,Object.keys(M));
 generateSummary(M,o,faceShape,raw);renderCards('proportionsGrid',M,Object.keys(M).filter(k=>M[k].cat==='proportions'));renderCards('featuresGrid',M,Object.keys(M).filter(k=>M[k].cat==='features'));drawRadar(M);generateRecs(M);document.getElementById('profilePrompt').style.display='block';
+  generateTransformPreview(document.getElementById('previewImg'),landmarksData,M,analysisResults.skinData||null);
 R.scrollIntoView({behavior:'smooth',block:'start'})}
 function gr(s){return s>=8?'excellent':s>=6.5?'good':s>=4.5?'average':'poor'}function gc(g){return{excellent:'var(--emerald)',good:'var(--sky)',average:'var(--amber)',poor:'var(--rose)'}[g]}
 function renderCards(id,M,keys){document.getElementById(id).innerHTML=keys.map(k=>{const m=M[k],g=gr(m.score),c=gc(g);return'<div class="m-card '+g+'"><div class="m-top"><div><div class="m-title">'+m.label+'</div><div class="m-subtitle">'+m.sub+'</div></div><div class="m-score-badge '+g+'">'+m.score.toFixed(1)+'</div></div><div class="m-bar-track"><div class="m-bar-fill" style="width:'+m.score*10+'%;background:'+c+'"></div></div><div class="m-stats"><div class="m-stat"><div class="m-stat-dot" style="background:'+c+'"></div><span class="m-stat-label">Measured</span><span class="m-stat-val">'+m.measured+'</span></div><div class="m-stat"><div class="m-stat-dot" style="background:var(--t4)"></div><span class="m-stat-label">Ideal</span><span class="m-stat-val">'+m.ideal+'</span></div></div><div class="m-desc">'+m.desc+'</div></div>'}).join('')}
@@ -1283,9 +1374,20 @@ function renderRecCard(r){
   return'<div class="rec-card" data-cat="'+r.cat+'"><div class="rec-header"><div class="rec-icon '+r.cat+'">'+r.icon+'</div><div><div class="rec-title">'+r.title+'</div><div class="rec-target">for '+r.forLabel+'</div></div><div class="rec-cat '+r.cat+'">'+catL+'</div></div>'+(meta?'<div class="rec-meta">'+meta+'</div>':'')+'<div class="rec-body">'+r.desc+'</div>'+stepsHtml+'<div class="rec-bottom"><div class="rec-impact">Impact <div class="rec-impact-bar">'+pips+'</div></div></div></div>';
 }
 
+
+function toggleDetails(btn){
+  const section=document.getElementById('detailedSection');
+  const isOpen=section.classList.contains('on');
+  section.classList.toggle('on');
+  btn.classList.toggle('open');
+  btn.querySelector('span:first-child').textContent=isOpen?'View Detailed Analysis':'Hide Detailed Analysis';
+  if(!isOpen)section.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
 function showTab(id,btn){document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById('tab-'+id).classList.add('active')}
 function exportJSON(){if(!analysisResults)return;const op2x=computeStatistical(analysisResults.raw);const op3x=computeHolistic(analysisResults.raw,analysisResults.metrics);const conX=cl2(analysisResults.overall*0.45+op2x.overall*0.30+op3x.overall*0.25);const data={timestamp:new Date().toISOString(),consensus:+conX.toFixed(2),opinion1_classical:+analysisResults.overall.toFixed(2),opinion2_statistical:+op2x.overall.toFixed(2),opinion3_holistic:+op3x.overall.toFixed(2),faceShape:analysisResults.faceShape,metrics:{},recommendations:allRecs.length};for(const[k,m]of Object.entries(analysisResults.metrics))data.metrics[k]={label:m.label,score:+m.score.toFixed(2),measured:m.measured,ideal:m.ideal};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='facescan-report.json';a.click()}
-function resetAll(){document.getElementById('resultsWrap').classList.remove('on');document.getElementById('previewWrap').style.display='none';document.getElementById('uploadSection').style.display='';dropZone.style.display='';fileInput.value='';landmarksData=null;analysisResults=null;allRecs=[];currentOverlays={landmarks:true,golden:false,thirds:false,symmetry:false};document.getElementById('profilePrompt').style.display='none';document.getElementById('profilePreview').style.display='none';document.getElementById('profileMetrics').innerHTML='';document.getElementById('profileMetrics').classList.remove('on');document.getElementById('profileFile').value='';window.scrollTo({top:0,behavior:'smooth'})}
+function resetAll(){document.getElementById('resultsWrap').classList.remove('on');document.getElementById('previewWrap').style.display='none';document.getElementById('uploadSection').style.display='';dropZone.style.display='';fileInput.value='';landmarksData=null;analysisResults=null;allRecs=[];currentOverlays={landmarks:true,golden:false,thirds:false,symmetry:false};document.getElementById('profilePrompt').style.display='none';
+  document.querySelectorAll('.transform-section').forEach(el=>el.remove());document.getElementById('profilePreview').style.display='none';document.getElementById('profileMetrics').innerHTML='';document.getElementById('profileMetrics').classList.remove('on');document.getElementById('profileFile').value='';window.scrollTo({top:0,behavior:'smooth'})}
 
 // ═══ APP MODE SWITCHING ═══
 function switchAppMode(mode,btn){
@@ -1546,6 +1648,7 @@ async function processProfile(file){
       
       const canvas=document.getElementById('profileCanvas');
       canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
+      canvas.style.width=img.clientWidth+'px';canvas.style.height=img.clientHeight+'px';
       
       const det=await faceapi.detectSingleFace(img,new faceapi.SsdMobilenetv1Options({minConfidence:.3})).withFaceLandmarks();
       if(!det){
@@ -1601,16 +1704,16 @@ async function processProfile(file){
       function pSigScore(v,ideal,k){const d=Math.abs(v-ideal)/Math.max(Math.abs(ideal),0.001);return cl2(1+9*Math.exp(-k*d*d))}
       
       const PM={};
-      PM.noseAngle={label:'Nose Bridge Angle',sub:'Slope of the nasal dorsum',score:pSigScore(noseAngle,55,0.005),measured:noseAngle.toFixed(0)+'°',ideal:'50°–60°',
+      PM.noseAngle={label:'Nose Bridge Angle',sub:'Slope of the nasal dorsum',score:pSigScore(noseAngle,55,15),measured:noseAngle.toFixed(0)+'°',ideal:'50°–60°',
         desc:'Nose bridge at '+noseAngle.toFixed(0)+'°. '+(Math.abs(noseAngle-55)<8?'Well-angled nose bridge.':noseAngle>65?'Steeper nose bridge — more projected profile.':'Flatter nose bridge — less projected from profile view.')};
       
-      PM.chinProfile={label:'Chin-Jaw Angle',sub:'Mandibular plane angle from profile',score:pSigScore(chinAngle,40,0.004),measured:chinAngle.toFixed(0)+'°',ideal:'35°–45°',
+      PM.chinProfile={label:'Chin-Jaw Angle',sub:'Mandibular plane angle from profile',score:pSigScore(chinAngle,40,8),measured:chinAngle.toFixed(0)+'°',ideal:'35°–45°',
         desc:'Chin-jaw angle: '+chinAngle.toFixed(0)+'°. '+(Math.abs(chinAngle-40)<8?'Good chin-jaw definition from the side.':chinAngle>50?'Steeper angle — chin may appear slightly recessed in profile.':'Flatter angle — strong chin projection in profile.')};
       
       PM.lipProjection={label:'Lip Projection',sub:'Lip prominence relative to nose-chin line',score:pSigScore(lipProjR,0.08,80),measured:lipProjR.toFixed(3),ideal:'0.080',
         desc:'Lip projection: '+lipProjR.toFixed(3)+'. '+(Math.abs(lipProjR-0.08)<0.03?'Good lip projection in profile.':lipProjR>0.12?'Very projected lips — prominent from the side.':'Flat lip profile — lip filler could improve side-view aesthetics.')};
       
-      PM.foreheadSlope={label:'Forehead Slope',sub:'Angle of the forehead plane',score:pSigScore(foreheadSlope,75,0.003),measured:foreheadSlope.toFixed(0)+'°',ideal:'70°–80°',
+      PM.foreheadSlope={label:'Forehead Slope',sub:'Angle of the forehead plane',score:pSigScore(foreheadSlope,75,25),measured:foreheadSlope.toFixed(0)+'°',ideal:'70°–80°',
         desc:'Forehead at '+foreheadSlope.toFixed(0)+'°. '+(Math.abs(foreheadSlope-75)<8?'Natural, well-angled forehead.':foreheadSlope>85?'Very vertical forehead.':'More sloped forehead — can be masculine.')};
       
       hideLoad();
@@ -1630,6 +1733,249 @@ async function processProfile(file){
     };
   };
   reader.readAsDataURL(file);
+}
+
+
+
+// ═══ TRANSFORMATION PREVIEW ═══
+function generateTransformPreview(img, landmarks, metrics, skinData) {
+  const container = document.getElementById('profilePrompt');
+  
+  // Build skin condition detail
+  const skinHtml = buildSkinCondition(skinData);
+  
+  // Build transformation preview
+  const weakest = Object.entries(metrics)
+    .filter(([k,m]) => m.score < 8 && k !== 'skinUnif' && k !== 'underEye')
+    .sort((a,b) => a[1].score - b[1].score)
+    .slice(0, 5);
+  
+  if (weakest.length === 0 && !skinHtml) return;
+  
+  let html = '';
+  
+  // Skin condition section
+  if (skinHtml) {
+    html += '<div class="transform-section">';
+    html += '<h3>Skin Condition Analysis</h3>';
+    html += skinHtml;
+    html += '</div>';
+  }
+  
+  // Transformation preview
+  if (weakest.length > 0) {
+    html += '<div class="transform-section" id="transformSection">';
+    html += '<h3>Predicted Improvement Preview</h3>';
+    html += '<div class="ba-container" id="baContainer">';
+    html += '<canvas id="beforeCanvas"></canvas>';
+    html += '<div class="ba-clip" id="baClip"><canvas id="afterCanvas"></canvas></div>';
+    html += '<div class="ba-slider" id="baSlider"></div>';
+    html += '<span class="ba-label before">CURRENT</span>';
+    html += '<span class="ba-label after">POTENTIAL</span>';
+    html += '</div>';
+    
+    // Score changes
+    html += '<div style="max-width:400px;margin:0 auto">';
+    weakest.forEach(([k, m]) => {
+      const potential = Math.min(10, m.score + (10 - m.score) * 0.5).toFixed(1);
+      const delta = '+' + (potential - m.score).toFixed(1);
+      html += '<div class="score-change"><span class="sc-metric">' + m.label + '</span>';
+      html += '<span class="sc-old">' + m.score.toFixed(1) + '</span>';
+      html += '<span class="sc-arrow">→</span>';
+      html += '<span class="sc-new">' + potential + '</span>';
+      html += '<span class="sc-delta">' + delta + '</span></div>';
+    });
+    html += '</div></div>';
+  }
+  
+  container.insertAdjacentHTML('beforebegin', html);
+  
+  // Render before/after canvases
+  if (weakest.length > 0) {
+    renderTransformation(img, landmarks, metrics, skinData);
+    initSlider();
+  }
+}
+
+function renderTransformation(imgEl, landmarks, metrics, skinData) {
+  const beforeC = document.getElementById('beforeCanvas');
+  const afterC = document.getElementById('afterCanvas');
+  if (!beforeC || !afterC) return;
+  
+  const w = imgEl.naturalWidth, h = imgEl.naturalHeight;
+  beforeC.width = w; beforeC.height = h;
+  afterC.width = w; afterC.height = h;
+  
+  const bCtx = beforeC.getContext('2d');
+  const aCtx = afterC.getContext('2d');
+  
+  // Before: original image
+  bCtx.drawImage(imgEl, 0, 0);
+  
+  // After: apply improvements
+  aCtx.drawImage(imgEl, 0, 0);
+  
+  const pts = landmarks.positions;
+  const fW = Math.abs(pts[0].x - pts[16].x);
+  
+  // 1. Skin smoothing (subtle blur blend)
+  const tempC = document.createElement('canvas');
+  tempC.width = w; tempC.height = h;
+  const tCtx = tempC.getContext('2d');
+  tCtx.filter = 'blur(' + Math.max(1, Math.round(fW * 0.008)) + 'px)';
+  tCtx.drawImage(imgEl, 0, 0);
+  tCtx.filter = 'none';
+  
+  // Blend smoothed version onto face area only (25% opacity)
+  aCtx.save();
+  aCtx.beginPath();
+  const jaw = landmarks.getJawOutline();
+  jaw.forEach((p, i) => i ? aCtx.lineTo(p.x, p.y) : aCtx.moveTo(p.x, p.y));
+  // Close path across forehead
+  aCtx.lineTo(pts[24].x, pts[24].y - fW * 0.15);
+  aCtx.lineTo(pts[19].x, pts[19].y - fW * 0.15);
+  aCtx.closePath();
+  aCtx.clip();
+  aCtx.globalAlpha = 0.3;
+  aCtx.drawImage(tempC, 0, 0);
+  aCtx.globalAlpha = 1.0;
+  aCtx.restore();
+  
+  // 2. Under-eye brightening
+  if (metrics.underEye && metrics.underEye.score < 7) {
+    const underEyePts = [[pts[40], pts[41], pts[1]], [pts[46], pts[47], pts[15]]];
+    underEyePts.forEach(([a, b, c2]) => {
+      const cx = (a.x + b.x + c2.x) / 3;
+      const cy = (a.y + b.y) / 2 + fW * 0.02;
+      const r = fW * 0.06;
+      aCtx.save();
+      aCtx.beginPath();
+      aCtx.ellipse(cx, cy, r, r * 0.5, 0, 0, Math.PI * 2);
+      aCtx.clip();
+      aCtx.globalCompositeOperation = 'screen';
+      aCtx.globalAlpha = 0.08;
+      aCtx.fillStyle = '#ffeedd';
+      aCtx.fillRect(cx - r, cy - r, r * 2, r * 2);
+      aCtx.restore();
+    });
+  }
+  
+  // 3. Symmetry improvement (subtle mirror blend)
+  if (metrics.symmetry && metrics.symmetry.score < 6) {
+    const mirrorC = document.createElement('canvas');
+    mirrorC.width = w; mirrorC.height = h;
+    const mCtx = mirrorC.getContext('2d');
+    mCtx.translate(w, 0); mCtx.scale(-1, 1);
+    mCtx.drawImage(afterC, 0, 0);
+    aCtx.globalAlpha = 0.15;
+    aCtx.drawImage(mirrorC, 0, 0);
+    aCtx.globalAlpha = 1.0;
+  }
+  
+  // 4. Subtle brightness/contrast boost
+  aCtx.globalCompositeOperation = 'soft-light';
+  aCtx.globalAlpha = 0.06;
+  aCtx.fillStyle = '#ffffff';
+  aCtx.fillRect(0, 0, w, h);
+  aCtx.globalCompositeOperation = 'source-over';
+  aCtx.globalAlpha = 1.0;
+  
+  // Set initial slider position at 50%
+  const clip = document.getElementById('baClip');
+  if (clip) clip.style.width = '50%';
+  const slider = document.getElementById('baSlider');
+  if (slider) slider.style.left = '50%';
+}
+
+function initSlider() {
+  const container = document.getElementById('baContainer');
+  const slider = document.getElementById('baSlider');
+  const clip = document.getElementById('baClip');
+  if (!container || !slider || !clip) return;
+  
+  let dragging = false;
+  function updatePos(x) {
+    const rect = container.getBoundingClientRect();
+    const pct = Math.max(0, Math.min(1, (x - rect.left) / rect.width));
+    slider.style.left = (pct * 100) + '%';
+    clip.style.width = (pct * 100) + '%';
+  }
+  
+  slider.addEventListener('mousedown', () => dragging = true);
+  container.addEventListener('mousedown', (e) => { dragging = true; updatePos(e.clientX); });
+  document.addEventListener('mousemove', (e) => { if (dragging) updatePos(e.clientX); });
+  document.addEventListener('mouseup', () => dragging = false);
+  
+  // Touch support
+  slider.addEventListener('touchstart', (e) => { dragging = true; e.preventDefault(); });
+  container.addEventListener('touchstart', (e) => { dragging = true; updatePos(e.touches[0].clientX); });
+  document.addEventListener('touchmove', (e) => { if (dragging) updatePos(e.touches[0].clientX); });
+  document.addEventListener('touchend', () => dragging = false);
+}
+
+// ═══ EXPANDED SKIN CONDITION ═══
+function buildSkinCondition(skinData) {
+  if (!skinData) return '';
+  
+  const items = [];
+  
+  // Texture smoothness (inverse of variance)
+  const textureScore = cl2(1 + 9 * Math.exp(-0.003 * skinData.allStd * skinData.allStd));
+  items.push({
+    icon: '✨', label: 'Texture',
+    score: textureScore,
+    color: textureScore >= 7 ? 'var(--emerald)' : textureScore >= 5 ? 'var(--amber)' : 'var(--rose)',
+    desc: textureScore >= 7 ? 'Smooth, even skin texture' : textureScore >= 5 ? 'Some texture variation — exfoliation and retinol can help' : 'Noticeable texture issues — professional treatment recommended'
+  });
+  
+  // Under-eye circles
+  const ueScore = cl2(1 + 9 * Math.exp(-200 * skinData.underEyeDiff * skinData.underEyeDiff));
+  items.push({
+    icon: '👁', label: 'Under-Eyes',
+    score: ueScore,
+    color: ueScore >= 7 ? 'var(--emerald)' : ueScore >= 5 ? 'var(--amber)' : 'var(--rose)',
+    desc: ueScore >= 7 ? 'Bright under-eye area, minimal darkness' : ueScore >= 5 ? 'Mild dark circles — sleep and caffeine cream can help' : 'Noticeable dark circles — consider tear trough filler or retinol eye cream'
+  });
+  
+  // Color uniformity
+  const unifScore = cl2(1 + 9 * skinData.colorUniformity);
+  items.push({
+    icon: '🎨', label: 'Tone Evenness',
+    score: unifScore,
+    color: unifScore >= 7 ? 'var(--emerald)' : unifScore >= 5 ? 'var(--amber)' : 'var(--rose)',
+    desc: unifScore >= 7 ? 'Even, consistent skin tone across the face' : unifScore >= 5 ? 'Some tonal variation — niacinamide or vitamin C can improve' : 'Uneven tone — consider azelaic acid or professional peels'
+  });
+  
+  // Brightness / Glow
+  const glowScore = cl2(1 + 9 * Math.exp(-0.0001 * Math.pow(skinData.avgLum - 140, 2)));
+  items.push({
+    icon: '💡', label: 'Luminosity',
+    score: glowScore,
+    color: glowScore >= 7 ? 'var(--emerald)' : glowScore >= 5 ? 'var(--amber)' : 'var(--rose)',
+    desc: glowScore >= 7 ? 'Good skin brightness and natural glow' : glowScore >= 5 ? 'Average luminosity — hydration and vitamin C boost glow' : 'Dull skin — exfoliation, hydration, and sleep will help'
+  });
+  
+  // Left-right color symmetry
+  const csymScore = cl2(1 + 9 * Math.exp(-skinData.lumSymmetry * 80));
+  items.push({
+    icon: '⚖', label: 'Color Symmetry',
+    score: csymScore,
+    color: csymScore >= 7 ? 'var(--emerald)' : csymScore >= 5 ? 'var(--amber)' : 'var(--rose)',
+    desc: csymScore >= 7 ? 'Both sides of face have consistent coloring' : csymScore >= 5 ? 'Some left-right color difference — could be lighting or redness' : 'Noticeable color asymmetry between face halves'
+  });
+  
+  let html = '<div class="skin-detail-grid">';
+  items.forEach(item => {
+    html += '<div class="skin-detail">';
+    html += '<div class="sd-icon">' + item.icon + '</div>';
+    html += '<div class="sd-label">' + item.label + '</div>';
+    html += '<div class="sd-score" style="color:' + item.color + '">' + item.score.toFixed(1) + '</div>';
+    html += '<div class="sd-desc">' + item.desc + '</div>';
+    html += '</div>';
+  });
+  html += '</div>';
+  
+  return html;
 }
 
 </script>
